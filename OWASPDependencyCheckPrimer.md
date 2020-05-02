@@ -218,7 +218,7 @@ li li {
 
 ![bg right:33% 90%](./Mitre_Corporation_logo.svg)
 
-The CVE and CWE systems are maintained and sponsored by The MITRE Corporation.
+The CVE and CWE systems are maintained and sponsored by [The MITRE Corporation](https://en.wikipedia.org/wiki/Mitre_Corporation).
 * Non-Profit Organization
 * Primary CNA
 * Funded by various US Government institutions:
