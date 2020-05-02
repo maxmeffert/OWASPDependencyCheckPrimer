@@ -302,10 +302,80 @@ This example of a CVSS calculation for CVE-2020-11022 can be found on [NVD](http
 
 ---
 
+<style scoped>
+li {
+  font-size: 24px
+}
+</style>
+
 ### Common Platform Enumeration
 
-![bg right:33% 90%](./cpe_logo.gif)
+![bg right:25% 90%](./cpe_logo.gif)
 
+Project Site: https://nvd.nist.gov/products/cpe
+
+A naming system to uniquely identify information technology systems (hardware and software).
+
+Originally developed be MITRE (https://cpe.mitre.org/), now part of the _Security Content Automation Protocol_ (SCAP) maintained by the National Institute of Standards and Technology (NIST).
+* **CPE Well-Formed Name (WFN)**
+uniquely identifies an information technology system (hardware or software)
+* **CPE URI**
+represents a CPE WFN
+
+**NOTE:** _CPE WFNs are not really important for working with Dependency Check._
+
+---
+
+<style scoped>
+li {
+  font-size: 24px
+}
+</style>
+
+### Common Platform Enumeration
+
+![bg right:25% 90%](./cpe_logo.gif)
+
+* **CPE URI Syntax**
+  * _CPE 2.2:_
+  `cpe:/{part}:{vendor}:{product}:{version}:{update}:{edition}:{language}`
+  * _CPE 2.3:_ 
+  `cpe:2.3:{part}:{vendor}:{product}:{version}:{update}:{edition}:{language}:{sw_edition}:{target_sw}:{target_hw}:{other}`
+* **CPE URI Examples**
+  * _CPE 2.2:_
+  `cpe:/a:jquery:jquery:1.0.1`
+  * _CPE 2.3:_
+  `cpe:2.3:a:jquery:jquery:1.0.1:*:*:*:*:*:*:*`
+
+THE CPE Naming Specification Version 2.3 can be found [here](https://csrc.nist.gov/publications/detail/nistir/7695/final).
+
+---
+
+<style scoped>
+td {
+  font-size: 14px
+}
+</style>
+
+### Common Platform Enumeration
+
+![bg right:25% 90%](./cpe_logo.gif)
+
+**Important CPE Sections**
+
+**CPE 2.2:** 
+`cpe:/{part}:{vendor}:{product}:{version}`
+`cpe:/a:jquery:jquery:1.0.1`
+**CPE 2.3:** 
+`cpe:2.3:{part}:{vendor}:{product}:{version}`
+`cpe:2.3:a:jquery:jquery:1.0.1:*:*:*:*:*:*:*`
+
+| URI Section | Value | Description |
+|:-|:-|:-|
+| part | a | applications (a), operating systems (o), hardware (h) | 
+| vendor | jquery | name of the vendor | 
+| product | jquery | name of the product | 
+| version | 1.0.1 | version of the product | 
 
 ---
 
