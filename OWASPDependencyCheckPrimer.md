@@ -150,7 +150,8 @@ assigns CVE Numbers
 e.g. The MITRE Corporation, Microsoft, Red Hat and [others](https://cve.mitre.org/cve/cna.html)
 * **CVE Number Syntax**
 `CVE prefix + Year + Arbitrary Digits`
-e.g. [CVE-2020-11022](https://nvd.nist.gov/vuln/detail/CVE-2020-11022)
+* **CVE Number Example** 
+[CVE-2020-11022](https://nvd.nist.gov/vuln/detail/CVE-2020-11022) (a jQuery XSS vulnerability)
 
 
 ---
@@ -199,15 +200,15 @@ The CWE system is a community project which aims to understand, identify, fix an
 identifies a category of known weaknesses or a concrete known weakness in software
 * **CWE Number Syntax**
 `CWE prefix + Arbitrary Digits`
-e.g.:
-  * _Category:_ [CWE-1211](https://cwe.mitre.org/data/definitions/1211.html) Authentication Errors
-  * _Weakness:_ [CWE-295](https://cwe.mitre.org/data/definitions/295.html) Imporper Certificate Validation
+* **CWE Number Examples**
+  * _CWE Category:_ [CWE-1211](https://cwe.mitre.org/data/definitions/1211.html) Authentication Errors
+  * _CWE Weakness:_ [CWE-295](https://cwe.mitre.org/data/definitions/295.html) Imporper Certificate Validation
 
 ---
 
 <style scoped>
 li {
-  font-size: 25px
+  font-size: 23px
 }
 li li {
   font-size: 15px
@@ -218,7 +219,8 @@ li li {
 
 ![bg right:33% 90%](./Mitre_Corporation_logo.svg)
 
-The CVE and CWE systems are maintained and sponsored by [The MITRE Corporation](https://en.wikipedia.org/wiki/Mitre_Corporation).
+The CVE and CWE systems are maintained and sponsored by [The MITRE Corporation](https://en.wikipedia.org/wiki/Mitre_Corporation):
+* Project Site: https://www.mitre.org/
 * Non-Profit Organization
 * Primary CNA
 * Funded by various US Government institutions:
@@ -236,15 +238,74 @@ The CVE and CWE systems are maintained and sponsored by [The MITRE Corporation](
 
 ---
 
+<style scoped>
+li {
+  font-size: 25px
+}
+</style>
+
 ### Common Vulnerability Scoring System 
 
 ![bg right:25% 80%](./cvss_logo.png)
+
+Project Site: https://www.first.org/cvss/
+
+A system for calculating the serverity of vulnerabilities.
+
+* **CVSS Vector**
+describes _exploitability_ and _impact_ of a vulnerability
+  * **Example**
+  `CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N`
+
+* **CVSS Score**
+describes the approximate serverity of a vulnerability
+floating point value between 0 (good) and 10 (bad)
+  * **Example**
+  `Base Score 6.9` (medium serverity)
+
+---
+
+<style scoped>
+td {
+  font-size: 14px
+}
+</style>
+
+### Common Vulnerability Scoring System 
+
+![bg right:25% 80%](./cvss_logo.png)
+
+**CVSS Vector:** `CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N`
+
+**CVSS Version:** 3.1
+
+| Metric | Value | Category | 
+|:-|:-|:-|
+| Attack Vector (AV) | Network (N), Adjacent Network (A), Local (L), Physical (P) | Exploitability |
+| Access Complexity (AC) | Low (L), High (H) | Exploitability |
+| Privileges Required (PR) | None (N), Low (L), High (H) | Exploitability |
+| User Interaction (UI) | None (N), Required (R) | Exploitability |
+| (Authorization) Scope (S) | Unchanged (U), Changed (C) | Exploitability |
+| Confidentiality Impact (C) | None (N), Low (L), High (H) | Impact |
+| Integrity Impact (I) | None (N), Low (L), High (H) | Impact |
+| Availability Impact (A) | None (N), Low (L), High (H) | Impact |
+
+---
+
+### Common Vulnerability Scoring System 
+
+![bg right:25% 80%](./cvss_logo.png)
+
+![width:550px](./cvss_example.png)
+
+This example of a CVSS calculation for CVE-2020-11022 can be found on [NVD](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2020-11022&vector=AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N&version=3.1&source=GitHub,%20Inc.).
 
 ---
 
 ### Common Platform Enumeration
 
 ![bg right:33% 90%](./cpe_logo.gif)
+
 
 ---
 
