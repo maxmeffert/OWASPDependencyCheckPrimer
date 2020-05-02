@@ -236,11 +236,15 @@ The CVE and CWE systems are maintained and sponsored by The MITRE Corporation.
 
 ---
 
-### Common Vulnerability Scoring System (CVSS) 
+### Common Vulnerability Scoring System 
+
+![bg right:25% 80%](./cvss_logo.png)
 
 ---
 
-### Common Platform Enumeration (CPE)
+### Common Platform Enumeration
+
+![bg right:33% 90%](./cpe_logo.gif)
 
 ---
 
