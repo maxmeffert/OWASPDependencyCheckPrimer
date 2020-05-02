@@ -1,0 +1,6 @@
+{
+    "markdown.marp.themes": [
+        "./minimal.css"
+    ],
+    "FSharp.suggestGitignore": false
+}
