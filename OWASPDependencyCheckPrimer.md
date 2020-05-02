@@ -27,6 +27,9 @@ _"Reinvent The Wheel"_ by xkcd: https://xkcd.com/2140/
 
 ### The Problem
 
+
+![bg right:30% 90%](./OWASPLogo.png)
+
 This problem has been recognized by the OWASP Top 10 Web Application Security Risks.
 
 #### OWASP Top 10
@@ -60,6 +63,8 @@ References:
 ### Azure Pipeline Integration
 #### Hosted Agents
 
+![bg right:33% 90%](./DependencyCheckLogo.svg)
+
 Just add this tasks to your pipeline.
 ```yml
 - task: dependency-check-build-task@5
@@ -77,9 +82,11 @@ Just add this tasks to your pipeline.
 ---
 
 ### Azure Pipeline Integration
-#### On-Premise Agents
+#### On-Premise Agents (1/2)
 
-Dependency-Check needs JRE/JDK to run.
+![bg right:33% 90%](./DependencyCheckLogo.svg)
+
+Dependency-Check requires JRE/JDK to run.
 ```yml
 - task: JavaToolInstaller@0
   displayName: 'Dependency Check: Install OpenJDK'
@@ -99,7 +106,9 @@ Dependency-Check needs JRE/JDK to run.
 ---
 
 ### Azure Pipeline Integration
-#### On-Premise Agents
+#### On-Premise Agents (2/2)
+
+![bg right:33% 90%](./DependencyCheckLogo.svg)
 
 .NET Analyzers require .NET Core.
 ```yml
@@ -119,11 +128,111 @@ Dependency-Check needs JRE/JDK to run.
 
 ---
 
-### Common Vulnerabilities and Exporsers (CVE)
+
+<style scoped>
+li {
+  font-size: 28px
+}
+</style>
+
+### Common Vulnerabilities and Exposures
+
+![bg right:20% 90%](./cvebanner.png)
+
+Project Site: https://cve.mitre.org/
+
+A system to identify publicly known vulnerabilities and exposures.
+
+* **CVE Number**
+identifies publicly known vulnerabilities and exposures
+* **CVE Numbering Authority (CNA)**
+assigns CVE Numbers
+e.g. The MITRE Corporation, Microsoft, Red Hat and [others](https://cve.mitre.org/cve/cna.html)
+* **CVE Number Syntax**
+`CVE prefix + Year + Arbitrary Digits`
+e.g. [CVE-2020-11022](https://nvd.nist.gov/vuln/detail/CVE-2020-11022)
+
 
 ---
 
-### Common Weakness Enumeration (CWE)
+<style scoped>
+li {
+  font-size: 25px
+}
+</style>
+
+### Common Vulnerabilities and Exposures
+
+![bg right:20% 90%](./cvebanner.png)
+
+CVE Numbers are only assigned to flaws which satisfy the following criteria.
+
+A flaw must be:
+1. **Independently Fixable**
+The flaw can be fixed independently of any other bugs.
+2. **Acknowledged by the affected vendor** or **Documented**
+The flaw is either confirmed by the vendor or has a recorded prove.
+3. **Affecting one codebase**
+The flaw may impact many products, e.g white-labeling, but resides in a single codebase.
+
+For further information see: https://www.redhat.com/en/topics/security/what-is-cve
+
+---
+
+<style scoped>
+li {
+  font-size: 25px
+}
+</style>
+
+### Common Weakness Enumeration
+
+![bg right:20% 90%](./cwe_logo.jpg)
+
+Project Site: https://cwe.mitre.org/
+
+A category system for software weaknesses and vulnerabilities.
+
+The CWE system is a community project which aims to understand, identify, fix and prevent common security flaws in software and to create automated tools helping with these objectives.
+
+* **CWE Number**
+identifies a category of known weaknesses or a concrete known weakness in software
+* **CWE Number Syntax**
+`CWE prefix + Arbitrary Digits`
+e.g.:
+  * _Category:_ [CWE-1211](https://cwe.mitre.org/data/definitions/1211.html) Authentication Errors
+  * _Weakness:_ [CWE-295](https://cwe.mitre.org/data/definitions/295.html) Imporper Certificate Validation
+
+---
+
+<style scoped>
+li {
+  font-size: 25px
+}
+li li {
+  font-size: 15px
+}
+</style>
+
+### The MITRE Corporation
+
+![bg right:33% 90%](./Mitre_Corporation_logo.svg)
+
+The CVE and CWE systems are maintained and sponsored by The MITRE Corporation.
+* Non-Profit Organization
+* Primary CNA
+* Funded by various US Government institutions:
+  * Dpt. of Homeland Security
+  * Dpt. of Defense
+  * Federal Aviation Administration
+  * Internal Revenue Service 
+  * Department of Veterans Affairs. 
+  * National Institute of Standards and Technology
+  * Administrative Office of the United States Courts
+  * Centers for Medicare and Medicaid Services
+
+**FYI:** "MITRE" has no meaning, although it originated around the  Massachusetts Institute of Technology (MIT)
+
 
 ---
 
