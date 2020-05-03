@@ -468,15 +468,51 @@ td {
 
 ---
 
+<style scoped>
+ol {
+  font-size: 15px
+}
+</style>
+
 ### How It Works
 
+![bg right:33% 90%](./images/DependencyCheckLogo.svg)
+
+1. **Apply Analyzers**
+Dependency Check applies multiple _Analyzers_ to all dependencies, i.e. artifacts under the scan path.
+2. **Extract Evidence**
+_Analyzers_ extract _Evidence_, e.g. file name, manifest, POM, package names, etc.
+3. **Determine CPE**
+_Evidence_ is grouped into _Vendor_, _Product_ and _Version_ and determine CPE.
+4. **Match CPE**
+Match CPE against the CVE database.
+
+**Important:** The determined CPE has a confidence level equal to the lowest confidence level of used evidence to create it.
+
+More information can be found [here](https://jeremylong.github.io/DependencyCheck/general/internals.html).
+
 ---
 
-### Reading Reports
+<style scoped>
+li {
+  font-size: 25px
+}
+</style>
+
+### How It Works
+
+![bg right:33% 90%](./images/DependencyCheckLogo.svg)
+![width:700px](./images/report_evidence.png)
+
+Due to how the matching process works Dependency Chack may produce:
+* **[False Positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)**
+A matching CVE has nothing to do with your project.
+* **[False Negatives](https://jeremylong.github.io/DependencyCheck/general/hints.html)**
+A matching CVE is not found.
 
 ---
 
-### False Positives
+### Dealing with False Positives (1/2)
 
 ```yml
 - task: dependency-check-build-task@5
@@ -500,21 +536,23 @@ td {
 </suppressions>
 ```
 
+Add a suppression file to conditionally ignore [False Positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html).
+
 ---
 
-### False Positives
+### Dealing with False Positives (2/2)
 
 ![width:900px](./images/report_suppress.png)
 
 Suppressions can be generated from HTML reports.
 
-Suppressions can be configured for SHA1 Hashes, CVE Numbers, CPE URIs and more, see [Suppressing False Positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html) for more information.
+Suppressions can be configured for SHA1 Hashes, CVE Numbers, CPE URIs and more.
 
-Suppression can also be configured with an expiration date.
+Suppressions can also be configured with an expiration date.
 
 ---
 
-### False Negatives
+### Dealing with False Negatives
 
 ```yml
 - task: dependency-check-build-task@5
@@ -539,8 +577,13 @@ Suppression can also be configured with an expiration date.
 </hints>
 ```
 
-For further information see [Resolving False Negatives](https://jeremylong.github.io/DependencyCheck/general/hints.html).
+Add a hints file to conditionally enrich extracted evidence to reduce [False Negatives](https://jeremylong.github.io/DependencyCheck/general/hints.html).
+
+---
+
+# Questions?
 
 ---
 
 # Thanks!
+
