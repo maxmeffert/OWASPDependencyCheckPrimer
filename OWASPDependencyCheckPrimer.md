@@ -109,7 +109,6 @@ Dependency-Check requires JRE/JDK to run.
   ...
 ```
 
-
 ---
 
 ### Azure Pipeline Integration
@@ -133,8 +132,91 @@ Dependency-Check requires JRE/JDK to run.
   ...
 ```
 
+
 ---
 
+### Dependency Check Reports
+
+![bg right:33% 90%](./images/DependencyCheckLogo.svg)
+
+![width:800px](./images/report_header.png)
+
+Report header with a list of found vulnerabilities.
+
+---
+
+### Dependency Check Reports 
+
+![bg right:33% 90%](./images/DependencyCheckLogo.svg)
+
+![width:800px](./images/report_entry.png)
+
+_**Where do the links go?**_
+
+---
+
+### Dependency Check Reports 
+
+![bg right:33% 90%](./images/DependencyCheckLogo.svg)
+
+![width:700px](./images/report_entry_details.png)
+
+_**What is CVE, CWE, CVSS, CPE?**_
+
+---
+
+<style scoped>
+li {
+  font-size: 23px
+}
+</style>
+
+### National Vulnerability Database
+
+![bg right:35% 90%](./images/nvd.png)
+
+The main source for understanding reports of Dependency Check.
+
+The US Government repository for _Security Content Automation Protocol_ (SCAP) content.
+
+**SCAP Components**
+* Common Vulnerabilities and Exposures (CVE)
+* Common Vulnerability Scoring System (CVSS)
+* Common Platform Enumeration (CPE)
+* and [more](https://csrc.nist.gov/projects/security-content-automation-protocol/).
+
+**NOTE:** _(1.) SCAP contains other components which are not important for now. (2.) CVE content includes Common Weakness Enumeration (CWE) content which is not part of SCAP, AFAIK._
+
+---
+
+<style scoped>
+li {
+  font-size: 20px
+}
+</style>
+
+### National Vulnerability Database
+
+![bg right:35% 90%](./images/nvd_details.png)
+
+**NVD Entry Sections**
+* **Title**
+$\rightarrow$ _Common Vulnerabilities and Exposures (CVE)_
+* Quick Info
+* Current Description
+* **Serverity**
+$\rightarrow$ _Common Vulnerability Scoring System (CVSS)_
+* References to Advisories, Solutions, and Tools
+* **Weakness Enumeration**
+$\rightarrow$ _Common Weakness Enumeration (CWE)_
+* **Known Affected Software Configurations**
+$\rightarrow$ _Common Platform Enumeration (CPE)_
+* Change History 
+
+**Example**
+https://nvd.nist.gov/vuln/detail/CVE-2011-4461
+
+---
 
 <style scoped>
 li {
@@ -396,7 +478,6 @@ td {
 
 ### False Positives
 
-
 ```yml
 - task: dependency-check-build-task@5
   displayName: 'Dependency Check: Run'
@@ -419,7 +500,17 @@ td {
 </suppressions>
 ```
 
-For further information see: [Suppressing False Positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)
+---
+
+### False Positives
+
+![width:900px](./images/report_suppress.png)
+
+Suppressions can be generated from HTML reports.
+
+Suppressions can be configured for SHA1 Hashes, CVE Numbers, CPE URIs and more, see [Suppressing False Positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html) for more information.
+
+Suppression can also be configured with an expiration date.
 
 ---
 
@@ -448,7 +539,7 @@ For further information see: [Suppressing False Positives](https://jeremylong.gi
 </hints>
 ```
 
-For further information see: [Resolving False Negatives](https://jeremylong.github.io/DependencyCheck/general/hints.html)
+For further information see [Resolving False Negatives](https://jeremylong.github.io/DependencyCheck/general/hints.html).
 
 ---
 
