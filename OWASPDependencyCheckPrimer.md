@@ -13,7 +13,7 @@ footer: 'Maximilian Meffert (c) 2020'
 
 ### The Problem
 
-![bg right:45% 90%](./reinvent_the_wheel.png)
+![bg right:45% 90%](./images/reinvent_the_wheel.png)
 
 
 #### In A Nutshell
@@ -28,7 +28,7 @@ _"Reinvent The Wheel"_ by xkcd: https://xkcd.com/2140/
 ### The Problem
 
 
-![bg right:30% 90%](./OWASPLogo.png)
+![bg right:30% 90%](./images/OWASPLogo.png)
 
 This problem has been recognized by the OWASP Top 10 Web Application Security Risks.
 
@@ -42,7 +42,7 @@ https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Co
 
 ### Enter _OWASP Dependency Check_
 
-![bg right:33% 90%](./DependencyCheckLogo.svg)
+![bg right:33% 90%](./images/DependencyCheckLogo.svg)
 
 A tool for mitigating OWASP Top 10 #9.
 
@@ -63,7 +63,7 @@ References:
 ### Azure Pipeline Integration
 #### Hosted Agents
 
-![bg right:33% 90%](./DependencyCheckLogo.svg)
+![bg right:33% 90%](./images/DependencyCheckLogo.svg)
 
 Just add this tasks to your pipeline.
 ```yml
@@ -84,7 +84,7 @@ Just add this tasks to your pipeline.
 ### Azure Pipeline Integration
 #### On-Premise Agents (1/2)
 
-![bg right:33% 90%](./DependencyCheckLogo.svg)
+![bg right:33% 90%](./images/DependencyCheckLogo.svg)
 
 Dependency-Check requires JRE/JDK to run.
 ```yml
@@ -108,7 +108,7 @@ Dependency-Check requires JRE/JDK to run.
 ### Azure Pipeline Integration
 #### On-Premise Agents (2/2)
 
-![bg right:33% 90%](./DependencyCheckLogo.svg)
+![bg right:33% 90%](./images/DependencyCheckLogo.svg)
 
 .NET Analyzers require .NET Core.
 ```yml
@@ -137,7 +137,7 @@ li {
 
 ### Common Vulnerabilities and Exposures
 
-![bg right:20% 90%](./cvebanner.png)
+![bg right:20% 90%](./images/cvebanner.png)
 
 Project Site: https://cve.mitre.org/
 
@@ -164,7 +164,7 @@ li {
 
 ### Common Vulnerabilities and Exposures
 
-![bg right:20% 90%](./cvebanner.png)
+![bg right:20% 90%](./images/cvebanner.png)
 
 CVE Numbers are only assigned to flaws which satisfy the following criteria.
 
@@ -188,7 +188,7 @@ li {
 
 ### Common Weakness Enumeration
 
-![bg right:20% 90%](./cwe_logo.jpg)
+![bg right:20% 90%](./images/cwe_logo.jpg)
 
 Project Site: https://cwe.mitre.org/
 
@@ -217,7 +217,7 @@ li li {
 
 ### The MITRE Corporation
 
-![bg right:33% 90%](./Mitre_Corporation_logo.svg)
+![bg right:33% 90%](./images/Mitre_Corporation_logo.svg)
 
 The CVE and CWE systems are maintained and sponsored by [The MITRE Corporation](https://en.wikipedia.org/wiki/Mitre_Corporation):
 * Project Site: https://www.mitre.org/
@@ -246,7 +246,7 @@ li {
 
 ### Common Vulnerability Scoring System 
 
-![bg right:25% 80%](./cvss_logo.png)
+![bg right:25% 80%](./images/cvss_logo.png)
 
 Project Site: https://www.first.org/cvss/
 
@@ -273,7 +273,7 @@ td {
 
 ### Common Vulnerability Scoring System 
 
-![bg right:25% 80%](./cvss_logo.png)
+![bg right:25% 80%](./images/cvss_logo.png)
 
 **CVSS Vector:** `CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N`
 
@@ -294,9 +294,9 @@ td {
 
 ### Common Vulnerability Scoring System 
 
-![bg right:25% 80%](./cvss_logo.png)
+![bg right:25% 80%](./images/cvss_logo.png)
 
-![width:550px](./cvss_example.png)
+![width:550px](./images/cvss_example.png)
 
 This example of a CVSS calculation for CVE-2020-11022 can be found on [NVD](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2020-11022&vector=AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N&version=3.1&source=GitHub,%20Inc.).
 
@@ -310,7 +310,7 @@ li {
 
 ### Common Platform Enumeration
 
-![bg right:25% 90%](./cpe_logo.gif)
+![bg right:25% 90%](./images/cpe_logo.gif)
 
 Project Site: https://nvd.nist.gov/products/cpe
 
@@ -334,7 +334,7 @@ li {
 
 ### Common Platform Enumeration
 
-![bg right:25% 90%](./cpe_logo.gif)
+![bg right:25% 90%](./images/cpe_logo.gif)
 
 * **CPE URI Syntax**
   * _CPE 2.2:_
@@ -359,7 +359,7 @@ td {
 
 ### Common Platform Enumeration
 
-![bg right:25% 90%](./cpe_logo.gif)
+![bg right:25% 90%](./images/cpe_logo.gif)
 
 **Important CPE Sections**
 
