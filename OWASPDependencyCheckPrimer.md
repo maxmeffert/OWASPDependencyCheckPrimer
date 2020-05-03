@@ -27,6 +27,13 @@ _"Reinvent The Wheel"_ by xkcd: https://xkcd.com/2140/
 
 ### The Problem
 
+![](./images/laurie_voss_tweet.png)
+
+Vulnerabilities on NPM in 2018: https://twitter.com/seldo/status/1021865857813630976
+
+---
+
+### The Problem
 
 ![bg right:30% 90%](./images/OWASPLogo.png)
 
