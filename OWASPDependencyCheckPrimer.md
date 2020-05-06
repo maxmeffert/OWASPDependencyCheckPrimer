@@ -13,7 +13,7 @@ footer: 'Maximilian Meffert (c) 2020'
 
 ### The Problem
 
-![bg right:45% 90%](./images/reinvent_the_wheel.png)
+![bg right:45% 70%](./images/reinvent_the_wheel.png)
 
 
 #### In A Nutshell
